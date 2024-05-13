@@ -67,6 +67,38 @@ button{
 
 .sidebar {
   grid-row: 1/-1;
+  padding: 15px;
+}
+
+.sidebar-top{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.sidebar-top > img{
+  width: 50px;
+}
+
+.sidebar-top > span{
+  font-size: 25px;
+}
+
+.sidebar-row{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+.sidebar-row > span{
+  font-size: 20px;
+}
+
+.sidebar-row:nth-child(7){
+  margin-bottom: 100px;
 }
 
 .main {
