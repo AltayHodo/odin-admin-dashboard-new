@@ -105,8 +105,9 @@ button {
   grid-column: 2/3;
   grid-row: 2/-1;
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 1fr max(20%, 300px);
   padding: 20px;
+  gap: 35px;
 }
 
 .main-title{
@@ -142,7 +143,48 @@ button {
   gap: 20px;
 }
 
+.main-right{
+  padding-right: 50px;
+}
 
+.announcements{
+  border: 1px solid;
+  padding: 20px;
+  padding-top: 30px;
+}
+
+.announcements-title{
+  font-weight: bold;
+}
+
+.announcements-text{
+  color: grey;
+  margin-top: 5px;
+}
+
+hr{
+  margin: 20px 0;
+}
+
+.main-title.trending-title{
+  margin-top: 30px;
+}
+
+.trending{
+  border: 1px solid;
+  padding: 20px;
+}
+
+.trending-profile{
+  display: flex;
+  gap: 15px;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.nickname{
+  color: grey;
+}
 
 .icon {
   width: 35px;
