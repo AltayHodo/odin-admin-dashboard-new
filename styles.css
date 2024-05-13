@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+:root {
+  --light-green: #34d399;
+  --dark-green: #047857;
+  --light-grey: #ecfdf5;
+}
+
 body {
   display: grid;
   grid-template-columns: max(17%, 400px) 1fr;
@@ -34,6 +40,8 @@ body>div {
   margin-right: 60px;
   margin-left: 20px;
   min-width: 100px;
+  height: 30px;
+  border-radius: 20px;
 }
 
 .name-top-right {
@@ -54,6 +62,16 @@ body>div {
   margin-right: 20px;
 }
 
+.header-text-top {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.header-text-bottom {
+  font-weight: bold;
+  font-size: 25px;
+}
+
 .buttons {
   display: flex;
   align-items: center;
@@ -63,11 +81,21 @@ body>div {
 
 button {
   padding: 10px 25px;
+  background-color: var(--light-green);
+  border: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 15px;
+  cursor: pointer;
 }
 
 .sidebar {
   grid-row: 1/-1;
   padding: 15px;
+  background-color: var(--light-green);
+  color: white;
+  /* font-weight: bold; */
+  letter-spacing: 1px;
 }
 
 .sidebar-top {
@@ -94,7 +122,7 @@ button {
 }
 
 .sidebar-row>span {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .sidebar-row:nth-child(7) {
@@ -108,9 +136,10 @@ button {
   grid-template-columns: 1fr max(20%, 300px);
   padding: 20px;
   gap: 35px;
+  background-color: var(--light-grey);
 }
 
-.main-title{
+.main-title {
   margin-bottom: 10px;
   font-size: 25px;
 }
@@ -122,18 +151,19 @@ button {
 }
 
 .card {
-  border: 1px solid;
+  border-left: 7px solid var(--dark-green);
   width: 350px;
   padding: 30px 20px 20px 20px;
   font-size: 20px;
   border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .235);
 }
 
 .card-title {
   font-weight: bold;
 }
 
-.card-text{
+.card-text {
   margin-bottom: 50px;
 }
 
@@ -143,47 +173,54 @@ button {
   gap: 20px;
 }
 
-.main-right{
+.main-right {
   padding-right: 50px;
 }
 
-.announcements{
-  border: 1px solid;
+.announcements {
+  border-radius: 10px;
   padding: 20px;
   padding-top: 30px;
 }
 
-.announcements-title{
+.announcements-title {
   font-weight: bold;
 }
 
-.announcements-text{
+.announcements-text {
   color: grey;
   margin-top: 5px;
 }
 
-hr{
+hr {
   margin: 20px 0;
 }
 
-.main-title.trending-title{
+.main-title.trending-title {
   margin-top: 30px;
 }
 
-.trending{
-  border: 1px solid;
+.trending {
+  border-radius: 10px;
   padding: 20px;
 }
 
-.trending-profile{
+.trending-profile {
   display: flex;
   gap: 15px;
   font-size: 17px;
   margin-bottom: 20px;
 }
 
-.nickname{
+.nickname {
   color: grey;
+}
+
+.card,
+.trending,
+.announcements {
+  box-shadow: 0 0 15px rgba(0, 0, 0, .235);
+  background-color: white;
 }
 
 .icon {
